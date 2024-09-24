@@ -8,8 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for reporting an issue. Before you open the bug report please review the following troubleshooting 
-        guide written by the folks at Terraform (HashiCorp), which details the troubleshooting workflow for Terraform:
+        Thank you for reporting an issue. Before you open the bug report please review the following troubleshooting
+        guide written by the folks at Terraform (HashCorp), which details the troubleshooting workflow for Terraform:
           - [Troubleshoot Terraform](https://developer.hashicorp.com/terraform/tutorials/configuration-language/troubleshooting-workflow)
 
         Please fill in as much of the following form as you're able.
