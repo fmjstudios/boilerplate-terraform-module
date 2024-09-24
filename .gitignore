@@ -4,17 +4,12 @@
 
 # IntelliJ IDEA
 .idea/*
-!.idea/dataSources.xml
 
 # JetBrains Fleet
 .fleet/*
 
 # VS Code
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 #######################################
 # MISCELLANEOUS
@@ -27,7 +22,7 @@ build/*
 # Coverage tool output
 *.out
 
-
 # Terraform dependencies
 .terraform/*
+.tflint/*
 
