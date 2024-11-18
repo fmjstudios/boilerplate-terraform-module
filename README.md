@@ -1,41 +1,19 @@
-# Terraform Modules - _PLATFORM_ <img src="https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png" alt="Terraform Logo" align="right" width="225"/>
+# _Hetzner Cloud_ - MODULE <img src="https://avatars.githubusercontent.com/u/140525456?s=200&v=4" alt="FMJ Studios Logo" align="right" width="128"/> <img src="https://raw.githubusercontent.com/fmjstudios/artwork/refs/heads/main/projects/terraform/icon/color/terraform-icon-color.png" alt="Terraform Logo" align="right" width="128"/>
 
-## 📖 Docs
-
-<!-- BEGIN_TF_DOCS -->
-## Requirements
-
-No requirements.
-
-## Providers
-
-No providers.
-
-## Modules
-
-No modules.
-
-## Resources
-
-No resources.
-
-## Inputs
-
-No inputs.
-
-## Outputs
-
-No outputs.
-<!-- END_TF_DOCS -->
+A [Terraform module][module] to ...
 
 ## ✨ TL;DR
 
 ```shell
 module "hetzner_server_apache" {
-  source = "terraform-hetzner-modules/..."
+  source = "terraform-hetzner-modules/cloud/server"
   ...
 }
 ```
+
+<!-- BEGIN_TF_DOCS -->
+
+<!-- END_TF_DOCS -->
 
 ### 🔃 Contributing
 
@@ -66,10 +44,8 @@ for more information. You may also use the linked contact details to reach out d
 <!-- General links -->
 
 [org]: https://github.com/fmjstudios
-[terraform]: https://www.terraform.io/
 [hashicorp]: https://www.hashicorp.com/
 
 <!-- Third-party -->
 
-[renovate]: https://renovatebot.com/
-[precommit]: https://pre-commit.com/
+[module]: https://registry.terraform.io/modules/terraform-hetzner-modules/compute/server/latest
