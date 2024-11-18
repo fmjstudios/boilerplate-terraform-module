@@ -37,13 +37,13 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: '~${{ matrix.terraform_version }}'
+          terraform_version: "~${{ matrix.terraform_version }}"
 
       - name: Set up TFLint
         uses: terraform-linters/setup-tflint@v4
         with:
           github_token: ${{ env.GITHUB_TOKEN }}
-          tflint_version: 'v0.53.0'
+          tflint_version: "v0.53.0"
 
       - name: Cache TFLint plugins
         uses: actions/cache@v4
@@ -76,15 +76,6 @@ jobs:
       - name: Run TFLint
         id: tflint
         run: tflint -f compact
-
-      - name: Render Terraform docs
-        uses: terraform-docs/gh-actions@main
-        if: ${{ steps.tflint.outputs.exitcode == 0 }}
-        with:
-          working-dir: .
-          output-file: README.md
-          output-method: inject
-          git-push: "true"
 
   dispatch:
     runs-on: ubuntu-latest
